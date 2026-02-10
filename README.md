@@ -6,7 +6,12 @@ cmake -B build
 cd build && make
 ./main
 ```
-
+### Запуск с типом float:
+```
+cmake -B build -DUSE_FLOAT=ON
+cd build && make
+./main
+```
 ## Результаты запуска
 ### С double
 ```
