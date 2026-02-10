@@ -24,4 +24,6 @@ template <typename T> T add_sin(){
 
 int main(){
     cout << "Sum of sin: " << add_sin<value_type>();
+
+    return 0;
 }
