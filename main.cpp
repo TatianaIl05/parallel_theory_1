@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <vector>
-#define NUM_STEPS 1e7
+#define NUM_STEPS 10000000
 
 using namespace std;
 
