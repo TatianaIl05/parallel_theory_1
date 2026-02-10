@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
 #define NUM_STEPS 1e7
 
 using namespace std;
@@ -12,8 +13,10 @@ using namespace std;
 
 template <typename T> T add_sin(){
     T sum = 0;
+    vector<T> array(NUM_STEPS);
     for (int i = 0; i < NUM_STEPS; i++){
-        sum += sin(2*M_PI*i/NUM_STEPS);
+        array[i] = sin(2*M_PI*i/NUM_STEPS);
+        sum += array[i];
     }
 
     return sum;
