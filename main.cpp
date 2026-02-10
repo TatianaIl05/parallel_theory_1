@@ -4,14 +4,10 @@
 
 using namespace std;
 
-#if defined(USE_FLOAT) && defined(USE_DOUBLE)
-    #error "CHOOSE ONLY ONE TYPE"
-#elif defined(USE_FLOAT)
+#ifdef USE_FLOAT
     using value_type = float;
-#elif defined(USE_DOUBLE)
-    using value_type = double;
 #else
-    #error "THE TYPE IS NOT DEFINED"
+    using value_type = double;
 #endif
 
 template <typename T> T add_sin(){
